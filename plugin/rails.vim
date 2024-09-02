@@ -110,7 +110,7 @@ augroup railsPluginDetect
         \   call rails#buffer_setup() |
         \   call s:doau_user('BufEnterRails') |
         \ endif
-  autocmd FileType netrw
+  autocmd FileType netrw,nerdtree,neo-tree
         \ if RailsDetect(get(b:, 'netrw_curdir', @%)) |
         \   call s:doau_user('BufEnterRails') |
         \ endif
